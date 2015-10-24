@@ -1,6 +1,6 @@
-var app = angular.module("app");
-app.controller('DetailsController', function($scope, $routeParams, DataService){
-var idx = routeParams.myIndexId;
-$scope.detailPerson = DataService.data[idx];
-
+app.controller('DetailsController', 
+               function($scope, $routeParams, DataService){
+     var idx = $routeParams.myIndexId;
+     
+     $scope.detailPerson = DataService.data[idx];
 });
