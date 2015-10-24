@@ -3,9 +3,9 @@
 .config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when( ...  , {
+      when('/people' , {
         templateUrl: 'templates/list_of_people.html',
-        controller: 'PeopleListController'
+        controller: 'PeopleListControlle'
     })
 
 //I have a route called people and I'm looking at 1 person, replace the ...
@@ -13,7 +13,7 @@
 .config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when( ... , {
+      when('/people/' , {
         templateUrl: 'templates/person_details.html',
         controller: 'PersonDetailsController'
     })
@@ -23,7 +23,7 @@
 .config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when( ... , {
+      when('/setting' , {
         templateUrl: 'templates/settings.html',
         controller: 'SettingsController'
     })
@@ -34,7 +34,7 @@
 .config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when( ... , {
+      when('/people/:personId/activities/:activityId' , {
         templateUrl: 'templates/activity.html',
         controller: 'ActivityController'
     })
