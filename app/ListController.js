@@ -1,4 +1,4 @@
-app.controller('ListController', 
+app.controller('listController', 
                function($scope, DataService, $location){
     $scope.people = DataService.data;
     
